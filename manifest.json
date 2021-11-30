@@ -1,6 +1,25 @@
 {
     "name": "WebFSR",
     "description": "Add FSR to all video and canvas elements",
-    "version": "1.0",
-    "manifest_version": 3
-  }
+    "version": "0.1",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "webfsr.background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": ["webfsr.content.js"],
+            "run_at": "document_idle"
+        }
+    ],
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
