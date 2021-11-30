@@ -1,0 +1,6 @@
+{
+    "name": "WebFSR",
+    "description": "Add FSR to all video and canvas elements",
+    "version": "1.0",
+    "manifest_version": 3
+  }
