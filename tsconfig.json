@@ -1,0 +1,6 @@
+{
+    "compilerOptions": {
+        "module": "none",
+        "lib": ["ES2021", "DOM"]
+    }
+}

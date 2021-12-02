@@ -11,7 +11,7 @@
             "matches": [
                 "*://*/*"
             ],
-            "js": ["webfsr.content.js"],
+            "js": ["webfsr.imagefilter.js", "webfsr.content.js"],
             "run_at": "document_idle"
         }
     ],
